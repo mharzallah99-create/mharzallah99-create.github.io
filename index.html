@@ -166,6 +166,34 @@
   .tl-card li{font-size:0.92rem;color:var(--muted);padding-left:16px;position:relative;}
   .tl-card li::before{content:'';position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--blue);}
 
+  /* ===== PROJECTS ===== */
+  .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .project-card{
+    background:var(--card);border:1px solid var(--card-border);border-radius:16px;padding:30px;
+    display:flex;flex-direction:column;gap:14px;transition:border-color .15s,transform .15s;
+  }
+  .project-card:hover{border-color:var(--blue);transform:translateY(-3px);}
+  .project-tag{
+    font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:var(--blue);
+    text-transform:uppercase;letter-spacing:.06em;
+  }
+  .project-card h3{font-size:1.1rem;line-height:1.3;}
+  .project-card p{font-size:0.88rem;color:var(--muted);flex:1;}
+  .project-stack{display:flex;flex-wrap:wrap;gap:8px;}
+  .project-stack span{
+    font-size:0.72rem;padding:4px 11px;border-radius:14px;background:var(--bg-soft);
+    color:var(--muted);border:1px solid var(--card-border);
+  }
+  .project-link{
+    font-size:0.86rem;font-weight:700;color:var(--blue);display:inline-flex;align-items:center;gap:6px;
+  }
+  .project-link svg{width:14px;height:14px;transition:transform .15s;}
+  .project-card:hover .project-link svg{transform:translate(2px,-2px);}
+  .project-card.placeholder{
+    align-items:center;justify-content:center;text-align:center;color:var(--muted);
+    font-size:0.9rem;font-style:italic;border-style:dashed;
+  }
+
   /* ===== SKILLS ===== */
   .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
   .skill-card{background:var(--card);border:1px solid var(--card-border);border-radius:16px;padding:30px;}
@@ -297,6 +325,7 @@
     <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#education">Education</a>
       <a href="#activities">Activities</a>
@@ -480,6 +509,42 @@
   </div>
 </section>
 
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Selected Projects</h2>
+      <div class="section-rule"></div>
+      <p class="section-intro">Case studies and applied work, methodology-first — documented on GitHub.</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <span class="project-tag">Retail · Supply Chain</span>
+        <h3>Retail Flow Optimization — Master's Thesis</h3>
+        <p>Analysis of supply systems and flow optimization in the retail sector, applied research conducted during Master 2 at INSEEC.</p>
+        <div class="project-stack"><span>Excel</span><span>Power BI</span><span>Process mapping</span></div>
+        <a href="#" class="project-link">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></a>
+      </div>
+
+      <div class="project-card">
+        <span class="project-tag">PMO · Finance</span>
+        <h3>Project Portfolio Tracking Template</h3>
+        <p>A PMO toolkit built from the Euronext experience: project charter template, RACI matrix, risk register and status-reporting model.</p>
+        <div class="project-stack"><span>MS Project</span><span>Excel</span><span>Markdown</span></div>
+        <a href="#" class="project-link">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></a>
+      </div>
+
+      <div class="project-card">
+        <span class="project-tag">Business Intelligence</span>
+        <h3>Retail KPI Dashboard</h3>
+        <p>Interactive Power BI dashboard analyzing store-level performance indicators — staffing, throughput and incident tracking.</p>
+        <div class="project-stack"><span>Power BI</span><span>SQL</span><span>Data modeling</span></div>
+        <a href="#" class="project-link">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="skills">
   <div class="wrap">
     <div class="section-head">
@@ -604,7 +669,7 @@
           <h3>Keys to Effective PMO in a Financial Environment</h3>
           <p>Lessons learned from managing a project portfolio at Euronext: methodologies, tools and best practices for rigorous tracking.</p>
           <div class="article-tags"><span>PMO</span><span>Finance</span><span>Project Management</span></div>
-          <a href="#" class="article-read">Read article →</a>
+          <a href="articles/pmo-financial-environment.html" class="article-read">Read article →</a>
         </div>
       </div>
       <div class="article-card">
@@ -614,7 +679,7 @@
           <h3>Managing a Team in Retail: Challenges and Solutions</h3>
           <p>How to coordinate 20 team members in a fast-paced environment? Planning, KPIs and daily incident management.</p>
           <div class="article-tags"><span>Management</span><span>Retail</span><span>Leadership</span></div>
-          <a href="#" class="article-read">Read article →</a>
+          <a href="articles/managing-team-retail.html" class="article-read">Read article →</a>
         </div>
       </div>
       <div class="article-card">
@@ -624,7 +689,7 @@
           <h3>From Civil Engineering to Project Management: An Unconventional Path</h3>
           <p>How a technical background in civil engineering can become a major asset in project management and multidisciplinary team coordination.</p>
           <div class="article-tags"><span>Career</span><span>Transition</span><span>Skills</span></div>
-          <a href="#" class="article-read">Read article →</a>
+          <a href="articles/civil-engineering-to-pm.html" class="article-read">Read article →</a>
         </div>
       </div>
     </div>
