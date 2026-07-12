@@ -9,34 +9,68 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f8fafc;
             color: #1e293b;
+            margin: 0;
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-            padding: 20px;
         }
+        .header { text-align: center; margin-bottom: 40px; }
         h1 { color: #0f172a; margin-bottom: 5px; }
         h2 { color: #3b82f6; font-weight: 400; margin-top: 0; }
-        p { max-width: 600px; line-height: 1.6; color: #475569; }
-        .badge {
-            background-color: #e2e8f0;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            margin-top: 20px;
+        .intro { max-width: 700px; text-align: center; line-height: 1.6; color: #475569; margin-bottom: 40px; }
+        
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-top: 4px solid #1e3a8a;
         }
+        .project-title { color: #1e3a8a; font-size: 1.5em; margin-top: 0; margin-bottom: 10px; }
+        .project-role { font-weight: bold; color: #3b82f6; margin-bottom: 20px; font-size: 0.95em; }
+        h4 { color: #0f172a; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; margin-top: 25px; }
+        p, li { line-height: 1.6; color: #475569; font-size: 0.95em; }
+        ul { padding-left: 20px; }
     </style>
 </head>
 <body>
-    <h1>Mourad Harzallah</h1>
-    <h2>Chef de Projet Junior & Business Analyst</h2>
+
+    <div class="header">
+        <h1>Mourad Harzallah</h1>
+        <h2>Chef de Projet Junior & Business Analyst</h2>
+    </div>
     
-    <p>Bienvenue sur mon portfolio.</p>
-    <p>Alliant rigueur opérationnelle et vision stratégique, j'accompagne la transformation digitale et l'optimisation des processus métier à travers la gestion de projet et l'analyse de données.</p>
-    
-    <div class="badge">Portfolio en cours de déploiement ⚙️</div>
+    <div class="intro">
+        <p>Alliant rigueur opérationnelle et vision stratégique, j'accompagne la transformation digitale et l'optimisation des processus métier à travers la gestion de projet et l'analyse de données.</p>
+    </div>
+
+    <!-- PROJET CARREFOUR -->
+    <div class="project-card">
+        <h3 class="project-title">📊 Étude de Cas : Optimisation du Système de Réapprovisionnement (METI)</h3>
+        <div class="project-role">Coordinateur Opérationnel & Business Analyst | Carrefour City</div>
+        
+        <h4>1. Le Contexte Opérationnel</h4>
+        <p>Dans le secteur de la grande distribution urbaine, la disponibilité des produits est le premier levier de satisfaction client et de rentabilité. Le défi majeur consistait à confronter les prévisions algorithmiques du système automatisé (METI) à la réalité du terrain. L'intensité des flux exigeait une coordination millimétrée pour traiter les réceptions et la mise en rayon de manière fluide, tout en gérant les imprévus opérationnels.</p>
+
+        <h4>2. La Problématique</h4>
+        <p>Comment adapter et optimiser les commandes automatiques du système METI pour absorber efficacement les anomalies locales (pics de fréquentation imprévus, retards logistiques, erreurs d'inventaire) sans générer de sur-stockage ou de ruptures de linéaire ?</p>
+
+        <h4>3. Méthodologie et Actions Menées</h4>
+        <ul>
+            <li><strong>Audit des flux de données :</strong> Analyse des écarts entre les commandes théoriques de l'algorithme et les besoins réels constatés lors des réceptions matinales.</li>
+            <li><strong>Analyse des causes racines :</strong> Identification des facteurs perturbant le réapprovisionnement (démarque inconnue, erreurs de balisage, saisonnalité non captée par le système).</li>
+            <li><strong>Modélisation et Recommandations :</strong> Proposition de nouveaux paramétrages pour affiner les seuils d'alerte de l'outil et mise en place de KPIs logistiques.</li>
+        </ul>
+
+        <h4>4. Outils et Compétences</h4>
+        <p><strong>Management :</strong> Audit opérationnel, cartographie des processus, management transverse.<br>
+        <strong>Data :</strong> Analyse statistique, MS Excel avancé, élaboration de tableaux de bord (KPIs).<br>
+        <strong>Expertise Métier :</strong> Supply Chain, flux tendus, système d'information METI.</p>
+    </div>
+
 </body>
 </html>
