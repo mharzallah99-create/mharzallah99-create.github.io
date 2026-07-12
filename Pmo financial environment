@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keys to Effective PMO in a Financial Environment — Mourad Harzallah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0E17;--bg-soft:#10141F;--card:#131826;--card-border:#212840;
+    --ink:#F2F4F8;--muted:#9AA3B5;--blue:#4C7CF3;--blue-soft:#2E3B63;
+    --grad:linear-gradient(90deg,#4C7CF3,#8E6CF0,#4C7CF3);--max:760px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.7;}
+  a{color:var(--blue);text-decoration:none;}
+  body::before{content:'';position:fixed;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#0EA5A5,#4C7CF3,#7C6CF0);}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  header{padding:26px 0;border-bottom:1px solid var(--card-border);margin-bottom:56px;}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;max-width:1120px;}
+  .back{font-size:0.85rem;color:var(--muted);display:flex;align-items:center;gap:6px;}
+  .back:hover{color:var(--blue);}
+  .mark{font-weight:800;font-size:1.1rem;color:var(--ink);}
+  main{padding-bottom:100px;}
+  .meta{font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:var(--blue);margin-bottom:18px;}
+  h1{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;letter-spacing:-0.02em;line-height:1.15;margin-bottom:26px;}
+  h2{font-size:1.35rem;font-weight:700;margin:40px 0 16px;}
+  p{color:var(--muted);font-size:1.02rem;margin-bottom:18px;}
+  p strong{color:var(--ink);}
+  ul{margin:0 0 20px 20px;color:var(--muted);}
+  li{margin-bottom:8px;}
+  .tags{display:flex;gap:8px;margin:24px 0 40px;}
+  .tags span{font-size:0.75rem;padding:5px 12px;border-radius:14px;background:var(--blue-soft);color:#B9C7F5;}
+  .pull{border-left:3px solid var(--blue);padding-left:20px;margin:32px 0;font-style:italic;color:var(--ink);font-size:1.08rem;}
+  footer{padding:36px 0;text-align:center;border-top:1px solid var(--card-border);}
+  footer p{font-size:0.8rem;color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="mark">MH</span>
+    <a class="back" href="../index.html">← Back to portfolio</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="meta">March 2024 · 5 min read</div>
+    <h1>Keys to Effective PMO in a Financial Environment</h1>
+    <div class="tags"><span>PMO</span><span>Finance</span><span>Project Management</span></div>
+
+    <p>During my internship as a PMO Analyst at Euronext, I was responsible for tracking and consolidating a strategic project portfolio inside one of Europe's largest stock exchange operators. The financial sector leaves very little room for approximation: every delay, every budget deviation, and every unmanaged risk has a visible, often quantifiable, cost. Here is what that environment taught me about running an effective PMO.</p>
+
+    <h2>1. A portfolio is only as reliable as its update cadence</h2>
+    <p>The first lesson was about discipline, not tools. A project portfolio loses its value the moment its status is out of date. At Euronext, I learned to build a <strong>weekly consolidation rhythm</strong>: collecting status from project leads, reconciling it against the budget tracker, and flagging variances before they reached senior management. The goal was never to chase perfect data — it was to make sure decision-makers were never surprised.</p>
+
+    <h2>2. Risk registers only work if they are owned, not just filled in</h2>
+    <p>Every project I tracked had a risk register. Very few of them were useful at first, because risks were logged but nobody was accountable for mitigating them. The fix was simple in principle and harder in practice: each risk needed a named owner and a next review date, not just a severity score. Once that discipline was in place, the register stopped being a compliance exercise and became an actual steering tool.</p>
+
+    <div class="pull">"A PMO does not manage projects — it manages the visibility that lets other people manage projects well."</div>
+
+    <h2>3. Reporting for senior management is a translation exercise</h2>
+    <p>Preparing progress reports for senior management taught me that the biggest risk in reporting isn't omission — it's noise. Executives don't need every data point; they need the three numbers that change their decision. I learned to lead every report with <strong>status, budget variance, and the single biggest risk</strong>, and to push supporting detail into appendices rather than the front page.</p>
+
+    <h2>4. Coordination between business and stakeholders is where most delays actually originate</h2>
+    <p>On paper, most project delays look technical. In practice, most of the ones I saw were coordination failures: a decision waiting on a stakeholder who hadn't been looped in, or two teams building against different assumptions. Sitting at the intersection between business teams and stakeholders, the PMO's real value is often just making sure the right conversation happens before it becomes a blocker.</p>
+
+    <h2>What I'm carrying forward</h2>
+    <p>Financial-sector PMO work is unforgiving of vague tracking, but it's an excellent training ground for any PMO or coordination role: it forces a level of rigor — in budget tracking, risk ownership, and reporting clarity — that transfers directly to operational environments, including the retail coordination work I do today.</p>
+  </div>
+</main>
+
+<footer><p>© 2026 Mourad Harzallah. All rights reserved.</p></footer>
+</body>
+</html>
