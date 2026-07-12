@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Managing a Team in Retail: Challenges and Solutions — Mourad Harzallah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0E17;--bg-soft:#10141F;--card:#131826;--card-border:#212840;
+    --ink:#F2F4F8;--muted:#9AA3B5;--blue:#4C7CF3;--blue-soft:#2E3B63;
+    --grad:linear-gradient(90deg,#4C7CF3,#8E6CF0,#4C7CF3);--max:760px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.7;}
+  a{color:var(--blue);text-decoration:none;}
+  body::before{content:'';position:fixed;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#0EA5A5,#4C7CF3,#7C6CF0);}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  header{padding:26px 0;border-bottom:1px solid var(--card-border);margin-bottom:56px;}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;max-width:1120px;}
+  .back{font-size:0.85rem;color:var(--muted);display:flex;align-items:center;gap:6px;}
+  .back:hover{color:var(--blue);}
+  .mark{font-weight:800;font-size:1.1rem;color:var(--ink);}
+  main{padding-bottom:100px;}
+  .meta{font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:var(--blue);margin-bottom:18px;}
+  h1{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;letter-spacing:-0.02em;line-height:1.15;margin-bottom:26px;}
+  h2{font-size:1.35rem;font-weight:700;margin:40px 0 16px;}
+  p{color:var(--muted);font-size:1.02rem;margin-bottom:18px;}
+  p strong{color:var(--ink);}
+  ul{margin:0 0 20px 20px;color:var(--muted);}
+  li{margin-bottom:8px;}
+  .tags{display:flex;gap:8px;margin:24px 0 40px;}
+  .tags span{font-size:0.75rem;padding:5px 12px;border-radius:14px;background:var(--blue-soft);color:#B9C7F5;}
+  .pull{border-left:3px solid var(--blue);padding-left:20px;margin:32px 0;font-style:italic;color:var(--ink);font-size:1.08rem;}
+  footer{padding:36px 0;text-align:center;border-top:1px solid var(--card-border);}
+  footer p{font-size:0.8rem;color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="mark">MH</span>
+    <a class="back" href="../index.html">← Back to portfolio</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="meta">January 2025 · 7 min read</div>
+    <h1>Managing a Team in Retail: Challenges and Solutions</h1>
+    <div class="tags"><span>Management</span><span>Retail</span><span>Leadership</span></div>
+
+    <p>Coordinating a team of 20 people at Carrefour City taught me more about operational management than any case study could. Retail floor management is unlike office-based project coordination in one key way: <strong>there is no buffer</strong>. A scheduling gap, a supplier delay, or a customer incident has to be resolved within minutes, not days. Here's how I approached it.</p>
+
+    <h2>1. Scheduling is a forecasting problem, not an administrative one</h2>
+    <p>My first instinct was to treat scheduling as a rota to fill. It quickly became clear that the real skill was forecasting: anticipating peak hours, absences, and seasonal variation before they created a staffing gap. I started building schedules around expected footfall and stock deliveries rather than just even coverage, which cut down on last-minute reshuffling significantly.</p>
+
+    <h2>2. KPIs only change behavior if the team sees them too</h2>
+    <p>I was responsible for monitoring performance indicators and tracking objectives, but the indicators that mattered most weren't the ones I reported upward — they were the ones I shared with the team itself. Making throughput and incident numbers visible on the floor, not just in a manager's report, turned KPI tracking into a shared reference point rather than a top-down evaluation.</p>
+
+    <div class="pull">"In a fast-paced retail environment, the coordinator's job isn't to prevent every problem — it's to make sure the team knows exactly what to do when one happens."</div>
+
+    <h2>3. Incident management is a training exercise in disguise</h2>
+    <p>Managing unexpected situations — a till failure, a stock discrepancy, a staffing no-show — was a daily reality. Rather than solving every incident myself, I used each one as an informal training moment: walking a team member through the resolution so the next occurrence could be handled without escalation. Over time, this reduced how often issues reached me directly, which freed up time for higher-value coordination work.</p>
+
+    <h2>4. Mentoring new team members is a logistics-optimization lever</h2>
+    <p>Training and onboarding new employees is often treated as a fixed cost. I found it was actually one of the highest-leverage activities available: a well-onboarded team member reaches full productivity faster and needs less real-time supervision, which directly reduces the coordination load during peak periods.</p>
+
+    <h2>What transfers beyond retail</h2>
+    <p>The core skill retail coordination builds is <strong>decision-making under real-time constraints</strong> — a skill set that maps directly onto PMO and project coordination roles, where the stakes are different but the need for fast, well-informed judgment calls is the same.</p>
+  </div>
+</main>
+
+<footer><p>© 2026 Mourad Harzallah. All rights reserved.</p></footer>
+</body>
+</html>
