@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4C7CF3"/>
+      <stop offset="55%" stop-color="#8E6CF0"/>
+      <stop offset="100%" stop-color="#0EA5A5"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1420"/>
+      <stop offset="100%" stop-color="#181F33"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- background badge -->
+  <rect x="6" y="6" width="308" height="308" rx="72" fill="url(#bgGrad)" stroke="#232B45" stroke-width="2"/>
+
+  <!-- ascending milestone path (roadmap motif) -->
+  <polyline points="72,208 128,148 176,176 248,92"
+            fill="none" stroke="url(#grad)" stroke-width="12"
+            stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <!-- milestone nodes -->
+  <circle cx="72" cy="208" r="11" fill="#0F1420" stroke="url(#grad)" stroke-width="6"/>
+  <circle cx="128" cy="148" r="11" fill="#0F1420" stroke="url(#grad)" stroke-width="6"/>
+  <circle cx="176" cy="176" r="11" fill="#0F1420" stroke="url(#grad)" stroke-width="6"/>
+  <circle cx="248" cy="92" r="13" fill="url(#grad)"/>
+
+  <!-- wordmark -->
+  <text x="160" y="270" font-family="Arial, sans-serif" font-weight="800" font-size="40"
+        fill="#F2F4F8" text-anchor="middle" letter-spacing="2">MH</text>
+  <text x="160" y="292" font-family="'Courier New', monospace" font-weight="500" font-size="12"
+        fill="#7C86A3" text-anchor="middle" letter-spacing="4">PROJECT · PMO · DELIVERY</text>
+</svg>
