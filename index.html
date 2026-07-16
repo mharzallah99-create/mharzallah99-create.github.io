@@ -265,8 +265,11 @@
   .testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
   .testi-card{
     background:var(--card);border:1px solid var(--card-border);border-radius:16px;padding:34px;
-    position:relative;
+    position:relative;display:block;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s;
   }
+  .testi-card:hover{border-color:var(--blue);transform:translateY(-3px);}
+  .testi-who .name{transition:color .15s;}
+  .testi-card:hover .testi-who .name{color:var(--blue);}
   .testi-card .quote-mark{position:absolute;top:24px;right:28px;color:var(--blue-soft);font-size:2.4rem;font-family:Georgia,serif;line-height:1;}
   .testi-card p.quote{font-size:1rem;color:var(--ink);margin-bottom:26px;line-height:1.6;font-style:italic;}
   .testi-who{display:flex;align-items:center;gap:12px;}
@@ -736,28 +739,28 @@
     </div>
 
     <div class="testi-grid">
-      <div class="testi-card">
+      <a class="testi-card" href="https://www.linkedin.com/in/margot-maurier/" target="_blank" rel="noopener">
         <span class="quote-mark">"</span>
         <p class="quote">"Mourad demonstrated great rigor and a keen sense of organization during his internship at Euronext. His ability to consolidate and manage a complex project portfolio in a demanding financial environment is remarkable."</p>
         <div class="testi-who">
-          <div class="testi-avatar">P</div>
+          <div class="testi-avatar">M</div>
           <div>
-            <div class="name">PMO Manager</div>
-            <div class="role">Euronext, Paris</div>
+            <div class="name">Margot Maurier</div>
+            <div class="role">PMO Manager · Euronext, Paris</div>
           </div>
         </div>
-      </div>
-      <div class="testi-card">
+      </a>
+      <a class="testi-card" href="https://www.linkedin.com/in/frantz-crohet-9b7891a9/" target="_blank" rel="noopener">
         <span class="quote-mark">"</span>
         <p class="quote">"An exemplary team member who quickly adapted to field requirements. His natural leadership and ability to handle unexpected situations were major assets for our team."</p>
         <div class="testi-who">
-          <div class="testi-avatar">S</div>
+          <div class="testi-avatar">F</div>
           <div>
-            <div class="name">Store Director</div>
-            <div class="role">Carrefour City, Paris</div>
+            <div class="name">Frantz Crohet</div>
+            <div class="role">Store Director · Carrefour City, Paris</div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
